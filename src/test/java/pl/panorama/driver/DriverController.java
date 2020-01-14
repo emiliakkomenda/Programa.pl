@@ -24,7 +24,7 @@ public class DriverController {
     }
 
     public void start() {
-        System.setProperty("webdriver.chrome.pl.panorama.driver", DriversPathProvider.getChromeDriverPath());
+        System.setProperty("webdriver.chrome.driver", DriversPathProvider.getChromeDriverPath());
         driver = new ChromeDriver();
 
         driver.manage().window().maximize();
